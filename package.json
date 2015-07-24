@@ -1,0 +1,24 @@
+{
+  "name": "html-chain",
+  "version": "1.0.0",
+  "description": "A small javascript library to make html by chaining javascript functions",
+  "main": "html.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maael/html-chain.git"
+  },
+  "keywords": [
+    "html",
+    "chain",
+    "library"
+  ],
+  "author": "Matthew Elphick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maael/html-chain/issues"
+  },
+  "homepage": "https://github.com/maael/html-chain"
+}
