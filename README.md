@@ -26,3 +26,17 @@ Produces -
     </div>
 </div>
 ```
+
+## Installation
+
+### Node.js
+
+Run
+```npm install --save html-chain```
+You can then access it with ```var html = require('html-chain');```
+
+### Script
+
+Download and include the ```html.js``` script in your html.
+
+```<script type="text/javascript" src="_PATH_TO_html.js_"></script>```
