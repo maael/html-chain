@@ -4,7 +4,7 @@ A super small (only 2.7kB) javascript library to make html by chaining javascrip
 ## Example
 
 ```js
-var test = dom()
+var test = html()
     .add('div', {className: 'container'})
         .contains('div', {className: 'header'})
             .contains('h5', {className: 'headerTitle', text: 'This is a header'}).end()
