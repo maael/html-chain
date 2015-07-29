@@ -5,7 +5,7 @@ A super small (only 2.7kB) javascript library to make html by chaining javascrip
 
 ```js
 var test = html()
-    .add('div', {className: 'container'})
+    .add('div', {className: 'container', data: { info: 'extraInformation' }})
         .contains('div', {className: 'header'})
             .contains('h5', {className: 'headerTitle', text: 'This is a header'}).end()
         .and('div', {className: 'content'})
@@ -17,11 +17,11 @@ var test = html()
 Produces -
 
 ```html
-<div class='container'>
-    <div class='header'>
-        <h5 class='headerTitle'>This is a header</h5>
+<div class="container" data-info="extraInformation">
+    <div class="header">
+        <h5 class="headerTitle">This is a header</h5>
     </div>
-    <div class='content'>
+    <div class="content">
         <p>This is the content</p>
     </div>
 </div>

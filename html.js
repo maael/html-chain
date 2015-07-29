@@ -16,6 +16,15 @@ var html = (function() {
     }
     function makeEle(eTemp) {
         var element = document.createElement(eTemp.tag);
+        if(eTemp.hasOwnProperty('data')) {
+            var dataString = '';
+            for(var dataAttr in eTemp.data) {
+                if(eTemp.data.hasOwnProperty(dataAttr)) {
+                    element.dataset[dataAttr] = eTemp.data[dataAttr];
+                }
+            }
+            delete eTemp.data;
+        }
         for(var attr in eTemp) {
             if(eTemp.hasOwnProperty(attr)) {
                 element[attr] = eTemp[attr];
@@ -71,6 +80,7 @@ var html = (function() {
                 chunk = appendToLastAtLevel(chunk, level, element);
             }
         }
+        return chunk;
     }
     return {
         add: addEle,
@@ -87,3 +97,14 @@ if (typeof exports !== 'undefined') {
   }
   exports.html = html;
 }
+
+
+var test = html()
+    .add('div', {className: 'container', data: { info: 'extraInformation' }})
+        .contains('div', {className: 'header'})
+            .contains('h5', {className: 'headerTitle', text: 'This is a header'}).end()
+        .and('div', {className: 'content'})
+            .contains('p', {text: 'This is the content'}).end()
+        .end()
+    .build();
+console.log(test)
