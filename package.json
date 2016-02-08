@@ -2,7 +2,7 @@
   "name": "html-chain",
   "version": "1.0.0",
   "description": "A small javascript library to make html by chaining javascript functions",
-  "main": "html.js",
+  "main": "module.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/maael/html-chain/issues"
   },
-  "homepage": "https://github.com/maael/html-chain"
+  "homepage": "https://github.com/maael/html-chain",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "jsdom": "^3.1.2"
+  }
 }
