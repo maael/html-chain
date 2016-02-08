@@ -1,4 +1,8 @@
 # html-chain
+
+[![Build Status](https://img.shields.io/travis/maael/html-chain.svg)](https://travis-ci.org/maael/html-chain)
+[![Code Climate](https://img.shields.io/codeclimate/github/maael/html-chain.svg)](https://codeclimate.com/github/maael/html-chain)
+
 A super small (only 2.7kB) javascript library to make html by chaining javascript functions.
 
 ## Example
