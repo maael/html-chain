@@ -30,6 +30,8 @@ var html = (function(documentToBind) {
         if(eTemp.hasOwnProperty(attr) && excludeList.indexOf(attr) < 0) {
           if (attr === 'text') {
             element.innerHTML = eTemp[attr]
+          } else if (attr === 'className') {
+            element.setAttribute('class', eTemp['className'])
           } else {
             element.setAttribute(attr, eTemp[attr])
           }
