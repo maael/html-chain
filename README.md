@@ -1,9 +1,10 @@
 # html-chain
 
-[![Build Status](https://img.shields.io/travis/maael/html-chain.svg)](https://travis-ci.org/maael/html-chain)
-[![Code Climate](https://img.shields.io/codeclimate/github/maael/html-chain.svg)](https://codeclimate.com/github/maael/html-chain)
+[![NPM Version](https://img.shields.io/npm/v/html-chain.svg?style=flat-square)](https://www.npmjs.com/package/html-chain)
+[![Build Status](https://img.shields.io/travis/maael/html-chain.svg?style=flat-square)](https://travis-ci.org/maael/html-chain)
+[![Code Climate](https://img.shields.io/codeclimate/github/maael/html-chain.svg?style=flat-square)](https://codeclimate.com/github/maael/html-chain)
 
-A super small (only 2.7kB) javascript library to make html by chaining javascript functions.
+A super small (only 3.1kB) javascript library to make html by chaining javascript functions.
 
 ## Example
 
