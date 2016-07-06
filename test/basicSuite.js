@@ -18,7 +18,7 @@ module.exports = function (suiteName, html) {
       })
 
       it('should build html with classes', function () {
-        var body = html[func]('div', { class: 'testing' }).build()
+        var body = html[func]('div', { className: 'testing' }).build()
         assert.equal(body, '<div class="testing"></div>')
       })
 

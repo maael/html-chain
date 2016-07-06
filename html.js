@@ -3,14 +3,14 @@ var html = (function(documentToBind) {
       , currentLevel = 0
     this.document = documentToBind || document
     function makeEleObj(tag, attributes) {
-      attributes = attributes || {};
+      attributes = attributes || {}
       var eleObj = {
         level: currentLevel,
         tag: tag
       }
       for(var attr in attributes) {
         if(attributes.hasOwnProperty(attr)) {
-          eleObj[attr] = attributes[attr];
+          eleObj[attr] = attributes[attr]
         }
       }
       return eleObj
@@ -31,7 +31,7 @@ var html = (function(documentToBind) {
           if (attr === 'text') {
             element.innerHTML = eTemp[attr]
           } else if (attr === 'className') {
-            element.setAttribute('class', eTemp['className'])
+            element.setAttribute('class', eTemp[attr])
           } else {
             element.setAttribute(attr, eTemp[attr])
           }
@@ -46,7 +46,7 @@ var html = (function(documentToBind) {
     function startLevel(tag, attributes) {
       currentLevel += 1
       addEle(tag, attributes)
-      return this;
+      return this
     }
     function endLevel() {
       currentLevel -= 1
